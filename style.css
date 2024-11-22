@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora',sans-serif;
+}
+.sora-Sora{
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    padding: 15% 7.5%;
+    display: grid;
+    grid-template-columns: 34% 66%;
+}
+#Left{
+    display: grid;
+    grid-template-rows: 20% 80% ;
+}
+#Left #LUp{
+    display: flex;
+    align-items: center;
+}
+#LUp #Circle{
+       width: 50px;
+       height: 50px;
+       border-radius: 50%;
+       background-color:#F5C044;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+#LUp #Circle p{
+    font-size: 24px;
+}
+
+#Left #LDown h1{
+    font-size: 2.25rem;
+    margin-bottom: 0.9rem;
+    text-align: left;
+    font-weight: 600;
+}
+#Left #LDown h3{
+    font-size: 1.25rem;
+    line-height: 2.05rem;
+    text-align: left;
+    font-weight: 500;
+    color: #52525A;
+}
+#Checkbox{
+    width: 100%;
+    height: 203px;
+    padding-left: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#Checkbox .CB{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+#Checkbox #C1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4CA154;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Checkbox #C2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4CA154;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Checkbox #C3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4CA154;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Checkbox .CB p{
+    margin-left: 10px;
+    color: #52525A;
+    font-size: 0.875rem;
+}
+.CB i{
+    color: #FAFAF9;
+    font-size: 21.5px;
+}
+#Right{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+#Right #Black{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#Black .Review{
+    width: 420px;
+    height: 210px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    position: absolute;
+}
+#Black #RUp{
+    margin-left: 530px;
+    padding: 40px 40px;
+}
+#Black #RDown{
+    margin-left: 310px;
+    margin-top: 265px;
+    padding: 40px 40px;
+}
+#Black .Review .Comp{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    gap: 15px;
+}
+#Black .Review .Data{
+    width: 100%;
+    height: 70%;
+}
+#Comp1 img{
+    height: auto;
+    width: auto;
+    margin-bottom: 6px;
+}
+i{
+   color: #F5C044; 
+}
+#Gray{
+    color: #D4D3D8; 
+ }
+#Comp2 img{
+    height: 30px;
+    width: 70px;
+    margin-bottom: 100px;
+}
+.Review .Data h2{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600px;
+    margin-bottom: 1rem;
+}
+.Review .Data p{
+    font-size: 1rem;
+    font-weight: 300px;
+    color: #52525A;
+    margin-bottom: 1rem;
+}
+@media (max-width:640px){
+    #main{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 8px;
+    }
+    #Left{
+        height: 50%;
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        position: relative;
+    }
+    #LUp #Circle{
+        width: 48px;
+        height: 48px;
+    }
+    #LUp #Circle p{
+        font-size: 24px;
+    }
+    #Left #LDown h1{
+        font-size: 1.50rem;
+        margin-top: 12.5px;
+        margin-bottom: 5px;
+    }
+    #Left #LDown h3{
+        font-size:0.7rem;
+        text-align: left;
+        line-height: 1.25rem;
+        margin-bottom: 0;
+    }
+    #Checkbox{
+        position: absolute;
+        width: 100%;
+        height: 120px;
+    }
+    #Checkbox .CB{
+        width: 100%;
+        padding: 0px;
+        height: 30px;
+    }
+    #Checkbox #C1{
+        width: 17px;
+        height: 17px;
+        background-color: #4CA154;
+    }
+    #Checkbox #C2{
+        width: 17px;
+        height: 17px;
+        background-color: #4CA154;
+    }
+    #Checkbox #C3{
+        width: 17px;
+        height: 17px;
+        background-color: #4CA154;
+    }
+    #Checkbox .CB p{
+        margin-left: 5px;
+        font-size: 0.55rem;
+    }
+    .CB i{
+        color: #FAFAF9;
+        font-size: 18px;
+    }
+
+
+
+    #Right{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    #Right #Black{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 20px;
+    }
+    #Black .Review{
+        position: relative;
+        width: 360px;
+        height: 120px;
+        border-radius: 10px;
+    }
+    #Black #RUp{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 17.5px;
+        margin: 0%;
+        box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    }
+    #Black #RDown{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-top: 42.5%;
+        margin-left: 0%;
+        padding: 17.5px;
+        box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    }
+    #Black .Review .Comp{
+        width: 100%;
+        height: 35%;
+        display: flex;
+        text-align: center;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px;
+        gap: 4px;
+    }
+    #Black .Review .Data{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 65%;
+    }
+    #Comp1 img{
+        height:20px;
+        width: auto;
+        margin-right: 8px;
+    }
+    i{
+       color: #F5C044; 
+       font-size: 18px;
+       margin-bottom: 5px;
+    }
+    #Gray{
+        color: #D4D3D8; 
+     }
+    #Comp2 img{
+        height: 20px;
+        width: 60px;
+        margin-bottom: 10px;
+        margin-right: 8px;
+    }
+    .Review .Data h2{
+        margin: 0px;
+        margin-top: 1.5px;
+        font-size: 1rem;
+        font-weight: 600px;
+    }
+    .Review .Data p{
+        margin-top: 5px;
+        font-size: 0.7rem;
+        line-height: 1.05rem;
+        font-weight: 400px;
+    }
+}
